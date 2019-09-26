@@ -45,6 +45,7 @@ $name=$_SESSION['username']??'Guest';
   	.brand-text{
   		color: #cbb09c !important;
   	}
+	
   	form{
   		max-width: 460px;
   		margin: 20px auto;
@@ -92,8 +93,9 @@ $name=$_SESSION['username']??'Guest';
     <div class="container">
       <a href="index.php" class="brand-logo brand-text">Ninja Pizza</a>
       <ul id="nav-mobile" class="right hide-on-small-and-down">
-				<li class="	grey-text ">Hello <?php echo ($name); ?></li>
+		<li class="	grey-text ">Hello <?php echo ($name); ?></li>
         <li><a href="add.php" class="btn brand z-depth-0">Add a Pizza</a></li>
+		<li ><a class="grey-text " href="logout.php">Logout</a></li>
       </ul>
     </div>
   </nav>

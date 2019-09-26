@@ -114,10 +114,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     margin-top:40px;
                     border-style: solid;   
                     border-radius:25px;
-<<<<<<< HEAD
-=======
 
->>>>>>> 4867deb700a648c061804be1d03a0078f40f54fb
                  } 
     </style>
 </head>
