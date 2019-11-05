@@ -25,7 +25,7 @@ $name = $_SESSION['username'] ?? 'Guest';
 			color: #cbb09c;
 			/* White text */
 			padding: 12px 16px;
-			/* Some padding */
+			/* Some padding *
 			font-size: 18px;
 			/* Set a font size */
 			cursor: pointer;

@@ -120,16 +120,21 @@ if (isset($_POST['order'])) {
 </head>
 
 <body style='display:grid; grid-row-gap: 6px; '>
+    <h3 class="grey-text" style='position:relative; left:12em;'>Kindly save the following barcode for order verification and future references: </h3>
+
     <div style="position:relative;left:35vw;">
         <?php echo $img; ?>
 
+    </div>
+    <div>
+        <h4 class="grey-text" style='position:relative; left:15em;'>Please enter and confirm your address:</h4>
     </div>
     <div id='myMap' style='width: 50vw; height: 50vh; justify-self: center; '></div>
 
     <!-- <button type="button" onclick="showPosition();">Show Position</button> -->
     <div class="container" style='justify-self: center;'>
         <div class="row">
-            <form class="form-horizontal" style="position:relative; left:150px;">
+            <form class="form-horizontal" style="position:relative; left:150px;" action="orderconfirm.php" method="POST">
                 <fieldset>
                     <!-- Address form -->
 
@@ -188,13 +193,18 @@ if (isset($_POST['order'])) {
                         <label class="control-label">Country</label>
                         <div class="controls">
                             <input id="country" name="country" class="input-xlarge" value="">
-                            <img src="" alt="">
+
                         </div>
+                    </div>
+                    <div>
+                        <input type="submit" name="confirm" value="Confirm" class="btn brand z-depth-0" style="position:relative;left:25vw;">
                     </div>
                 </fieldset>
             </form>
         </div>
     </div>
 </body>
+<?php include('templates/footer.php'); ?>
+
 
 </html>
